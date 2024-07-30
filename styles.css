@@ -198,7 +198,7 @@ ul{
     font-size: 1.2em;
     line-height: 1.6;
 }
-.footer {
+.myfoot {
     background-color: #2d2d2d;
     color: #cecece;
     bottom: 0;
@@ -209,24 +209,24 @@ ul{
 .footerContent{
     flex:1;
 }
-.footer p {
+.myfoot p {
     margin: 10px;
 }
-.footer a {
+.myfoot a {
     color: #cecece;
     font-size: 0.8em;
     margin-bottom: 10px;
     text-decoration: none;
 }
-.footer li:first-child{
+.myfoot li:first-child{
     color: #ffffff;
     font-size: 1em;
 }
-.footer li{
+.myfoot li{
     font-size: 0.8em;
     margin-bottom: 10px;
 }
-.footer img{
+.myfoot img{
     width: 20px;
     height: 20px;
 }
