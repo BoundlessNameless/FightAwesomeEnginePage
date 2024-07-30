@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>战斗，爽！引擎</title>
-    <link rel="icon" type="image/png" href="logoSmall.png">
+    <link rel="icon" type="image/png" href="Resources/logoSmall.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">
-                <img src="logoSmallWhite.png" alt="Logo">
+            <a href="index.html" class="logo">
+                <img src="Resources/logoSmallWhite.png" alt="Logo">
                 FIGHT AWESOME ENGINE
             </a>
 
             <ul class="nav-links">
-                <li><a href="FightAwesomeEngine.zip" download>下载</a></li>
-                <li><a href="About/index.html">关于</a></li>
+                <li><a href="./Resources/FightAwesomeEngine.zip" download>下载</a></li>
+                <li><a href="#WhyChoose">引擎介绍</a></li>
+                <li><a href="World/index.html">世界观以及设定介绍</a></li>
                 <li><a href="API/index.html">API文档</a></li>
                 <li><a href="https://github.com/BoundlessNameless/FightAwesomeEngine" target="_blank">GitHub</a></li>
                 <li><a href="https://gitee.com/boundlessnameless/fight-awesome-engine" target="_blank">Gitee</a></li>
@@ -29,21 +30,107 @@
 
     <div class="fullscreen-image">
         <div>
-            <img src="bg.png" alt="Fullscreen Image">
+            <img src="Resources/bg.png" alt="Fullscreen Image">
         </div>
         <div class="introduction">
             <h4>产品</h4>
             <h1>战斗，爽！引擎 社区版</h1>
             <p>这是一个专门用来开发2d,2.5d格斗游戏的引擎</p>
             <p>它支持Windows,Linux</p>
-            <a href="FightAwesomeEngine.zip" class="download-button" download>开始使用</a>
-            <a href="contact.html" class="contact-button">联系我们</a>
+            <a href="Resources/FightAwesomeEngine.zip" class="download-button" download>开始使用</a>
+            <a href="Contact/contact.html" class="contact-button">联系我们</a>
         </div>
     </div>
 
-    <div class="content">
+    <div id="WhyChoose" class="content">
         <h1>为什么选择战斗爽？</h1>
-        <p>因为战斗很爽</p>
+        <p><del>因为战斗很爽</del> 战斗爽引擎和传统的格斗引擎不同，它以模组为核心，区分开每个游戏，开发门槛极低，拓展性强是我们的主要优势</p>
+        <p>用json存储数据，支持可视化软件编辑游戏数据</p>
+        <p>支持自定义任何东西！</p>
+    </div>
+    <div class="content">
+        <h1>一模组一世界</h1>
+        <p>模组存储在根目录下Mod文件夹内</p>
+        <p>用户可以自定义自己的Json解析规则，同时，引擎也自带强大的Json自动解析器，可以将正确格式的Json解析成游戏数据</p>
+        <p>如果选择引擎自带的Json解析器的话，那么模组之间的数据是通用的！</p>
+    </div>
+    <div class="content">
+        <h1>模组拓展和派生</h1>
+        <p>模组可以选择开源或者加密</p>
+        <p>在开源情况下，模组支持拓展人物，世界规则，地图等一切模组能实现的东西</p>
+        <p>同样的，如果在使用引擎自带的Json解析器的话，那么模组内的东西都是通用的！</p>
+    </div>
+    <div class="content">
+        <h1>完全解耦的人物技能招式</h1>
+        <p>人物的单个技能称为蒙太奇（Montage）</p>
+        <p>蒙太奇中包含动画轨道，轨道最基本组成单位为Clip（影片片段）</p>
+        <p>用户可以自定义Clip实现各种复杂的功能，同时引擎也提供了强大且全面的Clip供用户使用</p>
+        <p>用户可以完全按照视频剪辑的逻辑去编辑人物技能！</p>
+    </div>
+
+    <!-- <footer class="content">
+        <p>社交媒体:</p>
+        <a href="https://space.bilibili.com/330445050?spm_id_from=333.934.0.0" target="_blank">Bilibili</a>
+    </footer> -->
+    <div class="footer">
+        <div class="footerContent">
+            <ul>
+                <li>
+                    支持
+                </li>
+                <li>
+                    <a href="./Resources/FightAwesomeEngine.zip" download>下载</a>
+                </li>
+                <li>
+                    常见问题
+                </li>
+                <li>
+                    联系我们
+                </li>
+            </ul>
+        </div>
+        <div class="footerContent">
+            <ul>
+                <li>
+                    内容中心
+                </li>
+                <li>
+                    最新资讯
+                </li>
+                <li>
+                    技术文章
+                </li>
+            </ul>
+        </div>
+        <div class="footerContent">
+            <ul>
+                <li>
+                    关于我们
+                </li>
+                <li>
+                    <a href="Contact/contact.html">联系我们</a>
+                </li>
+                <li>
+                    加入我们
+                </li>
+                <li>
+                    官方论坛
+                </li>
+                <li>
+                    Bug反馈
+                </li>
+            </ul>
+        </div>
+        <div class="footerContent">
+            <ul>
+                <li>
+                    社交媒体
+                </li>
+                <li>
+                    <a href="https://space.bilibili.com/330445050?spm_id_from=333.934.0.0" target="_blank">Bilibili</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 
