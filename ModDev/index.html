@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1'>
+    <title>模组开发手册</title>
+    <link rel="stylesheet" href="../mdStytles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html">←返回首页</a>
+            <a href="#前言">前言</a>
+            <a href="#模组开发环境配置">模组开发环境配置</a>
+            <a href="#visual-studio-code">visual-studio-code</a>
+            <a href="#visual-studio">visual-studio</a>
+        </div>
+    </nav>
+    <div class="divider"></div>
+
+
+    <h1 id='战斗爽模组开发手册'>《战斗，爽！》模组开发手册</h1>
+    <h2 id='前言'>前言</h2>
+    <p>战斗爽开发包（Fight Awesome Engine Development Kit ）简称FDK</p>
+    <p>代码编辑器/IDE首选Visual Studio</p>
+    <p>FDK下载链接</p>
+    <p>腾讯微云：<a href='https://share.weiyun.com/B6n0VllH'>FDK</a> 密码：noname</p>
+    <p>百度网盘：<a href='https://pan.baidu.com/s/16yWwwDv1OcVTxoAnQVr35Q'>FDK</a> 提取码：name</p>
+    <p>OneDirve：<a href='https://1drv.ms/f/s!Alu25a399iWdh35nrq8R-W8jyiKF?e=d7YIWl'>FDK</a></p>
+    <p>模组示例文件下载连接</p>
+    <p>腾讯微云：<a href='https://share.weiyun.com/ab5mmBaN'>Example</a> 密码：noname</p>
+    <p>百度网盘：<a href='https://pan.baidu.com/s/1SFcwFtZm08U15JH1WscRMg'>Example</a> 提取码：name</p>
+    <p>OneDirve：<a href='https://1drv.ms/f/s!Alu25a399iWdh3-GDK1HOzgFU68k?e=KvfTU4'>Example</a></p>
+    <h2 id='模组开发环境配置'>模组开发环境配置</h2>
+    <h3 id='visual-studio-code'>Visual Studio Code</h3>
+    <p>进入官网下载vscode：</p>
+    <p><a href='https://code.visualstudio.com/Download'>Download Visual Studio Code - Mac, Linux, Windows</a></p>
+    <p>选择左侧拓展按钮，安装汉化插件：</p>
+    <p><img src="assets\image-20240722180617913.png" referrerpolicy="no-referrer" alt="image-20240722180617913"></p>
+    <p>然后安装vscode-solution-explorer</p>
+    <p><img src="assets\image-20240722180643601.png" referrerpolicy="no-referrer" alt="image-20240722180643601"></p>
+    <p>期间可能会提示让你下载其它插件，都下载下来即可</p>
+    <p>如果左侧工具栏有这个图标证明你vscode-solution-explorer安装成功了</p>
+    <p><img src="assets\image-20240722180805533.png" referrerpolicy="no-referrer" alt="image-20240722180805533"></p>
+    <p>点击此图标后，在最上方点击这个文件夹的图标</p>
+    <p><img src="assets\image-20240722180939289.png" referrerpolicy="no-referrer" alt="image-20240722180939289"></p>
+    <p>打开FDK中的.sln文件</p>
+    <p><img src="./assets/image-20240722192008934.png" referrerpolicy="no-referrer" alt="image-20240722192008934"></p>
+    <p>对此图标右键选择Add new project</p>
+    <p><img src="assets\image-20240722181342523.png" referrerpolicy="no-referrer" alt="image-20240722181342523"></p>
+    <p>中间的窗口一直往下滑，选择类库</p>
+    <p><img src="assets\image-20240722181419440.png" referrerpolicy="no-referrer" alt="image-20240722181419440"></p>
+    <p>选择C#</p>
+    <p><img src="assets\image-20240722181446713.png" referrerpolicy="no-referrer" alt="image-20240722181446713"></p>
+    <p>输入项目名称</p>
+    <p><img src="assets\image-20240722181532646.png" referrerpolicy="no-referrer" alt="image-20240722181532646"></p>
+    <p>接下来会让你输入主文件夹名称，这边建议和项目名一直，也就是输入项目名称之后按两下回车即可</p>
+    <p>如果最下方终端没有报错即可进行下一步</p>
+    <p><img src="assets\image-20240722181734181.png" referrerpolicy="no-referrer" alt="image-20240722181734181"></p>
+    <p>编辑你项目根目录中的.csproj文件，添加如下字段(可以到FDK中.csproj文件里复制)</p>
+    <p><img src="assets\image-20240722181955231.png" referrerpolicy="no-referrer" alt="image-20240722181955231"></p>
+    <p>然后把FDK的Library文件夹复制到你的项目根目录下</p>
+    <p>对你的项目右键点击Build按钮</p>
+    <p><img src="assets\image-20240722182334236.png" referrerpolicy="no-referrer" alt="image-20240722182334236"></p>
+    <p>在项目根目录下的bin/Debug/net8.0文件夹中有个【项目名.dll】的文件</p>
+    <p>这个就是你的模组dll文件了</p>
+    <p>如果没有或者终端报错证明模组开发环境配置失败</p>
+    <h3 id='visual-studio'>Visual Studio</h3>
+    <p>下载软件本体，选择社区版即可</p>
+    <p><a href='https://visualstudio.microsoft.com/zh-hans/downloads/'>下载 Visual Studio Tools - 免费安装 Windows、Mac、Linux
+            (microsoft.com)</a></p>
+    <p>双击安装程序，选择以下配置</p>
+    <p><img src="assets\image-20240722182743944.png" referrerpolicy="no-referrer" alt="image-20240722182743944"></p>
+    <p>然后安装即可</p>
+    <p>(若觉得此文档的安装教程并不详细可以百度自行搜索Visual Studio C#开发环境配置教程)</p>
+    <p>&nbsp;</p>
+    <p>安装完成之后直接双击FDK的.sln文件打开项目<img src="assets\image-20240722183034748.png" referrerpolicy="no-referrer"
+            alt="image-20240722183034748"></p>
+    <p>在右侧解决方案资源管理器中找到FightAwesomeEngin解决方案然后对其右键选择添加，新建项目</p>
+    <p><img src="assets\image-20240722183300260.png" referrerpolicy="no-referrer" alt="image-20240722183300260"></p>
+    <p>选择类库即可</p>
+    <p><img src="assets\image-20240722183418684.png" referrerpolicy="no-referrer" alt="image-20240722183418684"></p>
+    <p>根据提示输入项目名，然后选择Net8.0框架</p>
+    <p>选择依赖项右键添加项目引用</p>
+    <p><img src="assets\image-20240722183644847.png" referrerpolicy="no-referrer" alt="image-20240722183644847"></p>
+    <p>点击浏览</p>
+    <p><img src="assets\image-20240722183724692.png" referrerpolicy="no-referrer" alt="image-20240722183724692"></p>
+    <p>框选FDK中Library文件夹中的所有.dll文件</p>
+    <p><img src="assets\image-20240722183828298.png" referrerpolicy="no-referrer" alt="image-20240722183828298"></p>
+    <p>点击确定</p>
+    <p>右键你的项目点击生成按钮，如果没有报错代表模组开发环境配置完毕</p>
+    <p><img src="assets\image-20240722184007769.png" referrerpolicy="no-referrer" alt="image-20240722184007769"></p>
+    <p>在项目根目录下的bin/Debug/net8.0文件夹中有个【项目名.dll】的文件</p>
+    <p>这个就是你的模组dll文件了</p>
+    <p>如果没有或者终端报错证明模组开发环境配置失败</p>
+    <h3 id='如果你有一定基础'>如果你有一定基础</h3>
+    <p>开个C#项目引入FDK/Library/*.dll，然后想办法把你写的东西编译成dll即可</p>
+</body>
+
+</html>
