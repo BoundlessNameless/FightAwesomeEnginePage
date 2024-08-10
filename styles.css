@@ -38,7 +38,6 @@ ul{
     padding: 0 20px;
     /* 左右内边距 */
 }
-
 .logo {
     color: #ffffff;
     text-decoration: none;
@@ -198,6 +197,22 @@ ul{
     font-size: 1.2em;
     line-height: 1.6;
 }
+.text {
+    background-color: #ffffff;
+    padding: 50px;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
 .myfoot {
     background-color: #2d2d2d;
     color: #cecece;
@@ -209,14 +224,14 @@ ul{
 .footerContent{
     flex:1;
 }
-.myfoot p {
-    margin: 10px;
-}
 .myfoot a {
     color: #cecece;
-    font-size: 0.8em;
+    font-size: 1em;
     margin-bottom: 10px;
     text-decoration: none;
+}
+.myfoot a:hover{
+    text-decoration:underline;
 }
 .myfoot li:first-child{
     color: #ffffff;
